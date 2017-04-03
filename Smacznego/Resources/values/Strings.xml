@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="MA_wyszukaj">Wyszukaj Przepis</string>
+	<string name="MA_Pczysc">X</string>
+	<string name="MA_app_name">Smacznego</string>
+
+	<string name="AR_title">Utwórz nowy przepis</string>
+	<string name="AR_nazwa">Nazwa dla nowego przepisu</string>
+	<string name="AR_skladniki">Wymień potrzebne składniki</string>
+	<string name="AR_przepis">Napisz instrukcje pozwalające na odtworzenie przepisu</string>
+	<string name="AR_dodaj">Dodaj Przepis</string>
+	<string name="AR_NameError">Prosze podać nazwę przepisu</string>
+	<string name="AR_IgriError">Podaj przynajmniej jeden składnik</string>
+	<string name="AR_RecipeError">Zapomniałeś podać instrukcje ?</string>
+
+	<string name="SI_title">Potrzebne składniki</string>
+	<string name="SI_ok">OK</string>
+
+	<string name="P_deleteRecipe">Usuń przepis</string>
+	<string name="P_chooseImage">Wybierz zdjęcie dla przepisu</string>
+	<string name="P_imageUpload">Przetwarzam obrazek...</string>
+	<string name="P_imageUploadComplete">Udało się wgrać obrazek</string>
+	<string name="P_imageUploadError">Nie udało się wgrać obrazka</string>
+
+	<string name="DD_title">Pytanie potwierdzające</string>
+	<string name="DD_info">Czy napewno chcesz usunąć ten przepis ?</string>
+	<string name="DD_ok">OK</string>
+	<string name="DD_cancel">Anuluj</string>
+
+	<string name="Recipe_Types"></string>
+	<string-array name="Recipe_Types">
+        <item>Danie Mięsne</item>
+        <item>Danie Wegetariańskie</item>
+        <item>Zupa</item>
+        <item>Deser</item>
+        <item>Napój</item>
+    </string-array>
+
+    <string name="databaseAdd">Dodałem przepis do bazy!</string>
+	<string name="databaseAddError">Nie udało się dodać przepisu: </string>
+	<string name="databaseDeleteError">Niestety nie udało się usunąć: </string>
+</resources>

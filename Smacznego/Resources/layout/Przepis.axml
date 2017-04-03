@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/P_layout"
+    android:background="@android:color/white">
+    <TextView
+        android:text="Tytul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/P_title"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="28dp"
+        android:gravity="center" />
+    <ImageView
+        android:src="@drawable/noimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/P_obrazek"
+        android:layout_below="@id/P_title"
+        android:drawingCacheQuality="high"
+        android:scaleType="fitCenter" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/P_obrazek"
+        android:layout_below="@id/P_title"
+        android:id="@+id/P_scrollSklad">
+        <TextView
+            android:text="skladniki"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/P_skladniki"
+            android:textColor="#ff8549a2"
+            android:textSize="12dp"
+            android:padding="8dp"
+            android:textStyle="italic" />
+    </ScrollView>
+    <Button
+        android:text="@string/P_deleteRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/P_deleteRecipe"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.5" />
+    <ScrollView
+        android:minHeight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/P_scrollPrzepis"
+        android:layout_below="@id/P_obrazek"
+        android:layout_above="@id/P_deleteRecipe"
+        android:background="#ffd1fffa">
+        <TextView
+            android:text="przepis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/P_przepis"
+            android:textColor="#ff000000"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:keepScreenOn="true" />
+    </ScrollView>
+</RelativeLayout>

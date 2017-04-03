@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SI_layout"
+    android:weightSum="100"
+    android:paddingRight="25dp"
+    android:paddingBottom="25dp"
+    android:paddingLeft="25dp">
+    <TextView
+        android:text="@string/SI_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:id="@+id/SI_title"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ff13d9e3" />
+    <TextView
+        android:layout_weight="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SI_whatneeded"
+        android:textIsSelectable="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="14dp"
+        android:textStyle="italic" />
+    <Button
+        android:text="@string/SI_ok"
+        android:layout_weight="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SI_ok" />
+</LinearLayout>

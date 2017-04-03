@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MA_layout"
+    android:background="@android:color/white"
+    android:weightSum="100">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MA_menu"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/MA_logo"
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MA_poleszukaj"
+            android:hint="@string/MA_wyszukaj"
+            android:layout_below="@id/MA_logo" />
+        <Button
+            android:id="@+id/MA_Pdodaj"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff08e63c"
+            android:background="@drawable/dodaj" />
+        <Button xmlns:tools="http://schemas.android.com/tools"
+            android:text="@string/MA_Pczysc"
+            android:id="@+id/MA_Pczysc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/MA_logo"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff000000"
+            android:background="#ffffffff"
+            android:shadowColor="#ffffffff"
+            tools:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MA_ListaPrzepisow"
+        android:background="#ffd1fffa"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp" />
+</LinearLayout>

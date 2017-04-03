@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/AR_scroll">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AR_Layout"
+        android:weightSum="120"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="25dp">
+        <TextView
+            android:text="@string/AR_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AR_title"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:textColor="#ff13d9e3"
+            android:typeface="normal"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+        <Spinner
+            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:layout_weight="20"
+            android:id="@+id/AR_typ"
+            android:prompt="@string/Recipe_Types" />
+        <EditText
+            android:hint="@string/AR_nazwa"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:id="@+id/AR_nazwa"
+            android:capitalize="sentences"
+            android:autoText="true" />
+        <EditText
+            android:hint="@string/AR_skladniki"
+            android:layout_width="200dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:id="@+id/AR_skladniki"
+            android:autoText="true"
+            android:capitalize="none" />
+        <EditText
+            android:hint="@string/AR_przepis"
+            android:layout_width="200dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:id="@+id/AR_przepis"
+            android:capitalize="sentences"
+            android:autoText="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp" />
+        <Button
+            android:text="@string/AR_dodaj"
+            android:layout_weight="20"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/AR_dodajPrzepis" />
+    </LinearLayout>
+</ScrollView>
